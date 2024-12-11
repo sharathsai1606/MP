@@ -7,7 +7,7 @@ console.log('PAYPAL_CLIENT_ID:', process.env.PAYPAL_CLIENT_ID);
 console.log('PAYPAL_CLIENT_SECRET:', process.env.PAYPAL_CLIENT_SECRET);
 
 paypal.configure({
-  mode: process.env.PAYPAL_MODE,  // 'sandbox' or 'live'
+  mode: process.env.PAYPAL_MODE, 
   client_id: process.env.PAYPAL_CLIENT_ID,
   client_secret: process.env.PAYPAL_CLIENT_SECRET,
 });
