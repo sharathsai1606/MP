@@ -18,7 +18,7 @@ export const fetchAllFilteredProducts = createAsyncThunk(
     });
 
     const result = await axios.get(
-      `https://mp-server-2y5d.onrender.com/api/shop/products/get?${query}`
+      `https://mp-server-07a1.onrender.com/api/shop/products/get?${query}`
     );
 
     console.log(result);
@@ -31,7 +31,7 @@ export const fetchProductDetails = createAsyncThunk(
   "/products/fetchProductDetails",
   async (id) => {
     const result = await axios.get(
-      `https://mp-server-2y5d.onrender.com/api/shop/products/get/${id}`
+      `https://mp-server-07a1.onrender.com/api/shop/products/get/${id}`
     );
 
     return result?.data;
